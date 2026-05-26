@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Download, Mail, MapPin } from "lucide-react";
+import { ArrowDown, FileText, Mail, MapPin } from "lucide-react";
 import { siteConfig } from "@/data/portfolio";
 import { getHeroStats } from "@/lib/career";
+import { getResumeRequestMailto } from "@/lib/resume";
 import { Button } from "@/components/ui/Button";
 import { fadeUp } from "@/lib/motion";
 
@@ -40,9 +41,9 @@ export function Hero() {
               <Mail className="h-4 w-4" />
               Get in touch
             </Button>
-            <Button href={siteConfig.resumeUrl} variant="secondary" download>
-              <Download className="h-4 w-4" />
-              Download resume
+            <Button href={getResumeRequestMailto()} variant="secondary">
+              <FileText className="h-4 w-4" />
+              Request resume
             </Button>
             <Button
               href={siteConfig.social.linkedin}

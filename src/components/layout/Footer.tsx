@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/portfolio";
+import { getResumeRequestMailto } from "@/lib/resume";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -25,12 +26,12 @@ export function Footer() {
           >
             Email
           </Link>
-          <Link
-            href={siteConfig.resumeUrl}
+          <a
+            href={getResumeRequestMailto()}
             className="text-muted transition hover:text-accent"
           >
-            Resume
-          </Link>
+            Request resume
+          </a>
         </div>
       </div>
     </footer>

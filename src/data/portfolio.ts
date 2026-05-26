@@ -6,7 +6,6 @@ export const siteConfig = {
   location: "Pune, India",
   phone: "9561189091",
   email: "omkariitj@gmail.com",
-  resumeUrl: "/resume.pdf",
   availability: "Available for freelancing projects",
   social: {
     linkedin: "https://www.linkedin.com/in/omkar-dilwale-09b996164/",

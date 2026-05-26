@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# resume — request via email only (keep a local copy outside public/)
+public/resume.pdf
+private/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

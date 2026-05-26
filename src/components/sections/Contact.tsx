@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, Download, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, FileText, ArrowUpRight } from "lucide-react";
 import { siteConfig } from "@/data/portfolio";
+import { getResumeRequestMailto } from "@/lib/resume";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -59,9 +60,9 @@ export function Contact() {
                     <Mail className="h-4 w-4" />
                     Send email
                   </Button>
-                  <Button href={siteConfig.resumeUrl} variant="secondary" download>
-                    <Download className="h-4 w-4" />
-                    Resume PDF
+                  <Button href={getResumeRequestMailto()} variant="secondary">
+                    <FileText className="h-4 w-4" />
+                    Request resume
                   </Button>
                 </div>
               </div>
