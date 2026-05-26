@@ -197,14 +197,12 @@ export const education = [
   {
     degree: "Master of Technology (M.Tech)",
     institution: "Indian Institute of Technology (IIT) Jodhpur",
-    period: "Completed Dec 2025",
     description:
       "Advanced postgraduate studies in technology with strong problem-solving and research foundations.",
   },
   {
     degree: "Bachelor of Technology (B.Tech)",
     institution: "Pune University",
-    period: "Completed May 2020",
     description: "Undergraduate degree in engineering.",
   },
 ];

@@ -27,8 +27,7 @@ export function Education() {
                   <GraduationCap className="h-6 w-6" />
                 </div>
                 <div>
-                  <span className="badge">{edu.period}</span>
-                  <h3 className="mt-3 font-display text-lg font-semibold text-foreground">
+                  <h3 className="font-display text-lg font-semibold text-foreground">
                     {edu.degree}
                   </h3>
                   <p className="mt-1 text-sm font-medium text-accent">{edu.institution}</p>
